@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'FantasticViewA'
   s.version          = '0.1.0'
-  s.summary          = 'By far the most fantastic view I have seen in my entire life. No joke.'
+  s.summary          = 'post sdk for onboarding'
   s.swift_version = '4.0'
   s.description      = <<-DESC
-This fantastic view changes its color gradually makes your app look fantastic!
+post sdk for onboarding!
                        DESC
  
   s.homepage         = 'https://github.com/patelashaHQ/FantasticView'
@@ -14,5 +14,5 @@ This fantastic view changes its color gradually makes your app look fantastic!
  
   s.ios.deployment_target = '12.0'
   s.source_files = 'FantasticView/FantasticView.swift'
- 
+  s.dependency 'Alamofire'
 end

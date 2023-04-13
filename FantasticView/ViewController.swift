@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,18 @@ class ViewController: UIViewController {
                 
         self.view.addSubview(fantasticView)
         
+        demoApiCall()
+        
+    }
+    
+    func demoApiCall(){
+        AF.request("https://httpbin.org/get").response { response in
+            debugPrint(response)
+            if response.result != nil{
+                let alert = UIAlertController.init(title: "response", message: response.description, preferredStyle: .alert)
+                self.present(alert, animated: true)
+            }
+        }
     }
 
 

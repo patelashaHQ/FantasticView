@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class FantasticView : UIView {
     
@@ -35,4 +36,9 @@ class FantasticView : UIView {
         // You don't need to implement this
     }
     
+    func demoApiCall(){
+        AF.request("https://httpbin.org/get").response { response in
+            debugPrint(response)
+        }
+    }
 }

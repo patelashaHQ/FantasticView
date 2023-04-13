@@ -14,6 +14,7 @@
 		183E8DBE29DBF2FE004ED5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183E8DBD29DBF2FE004ED5D5 /* Assets.xcassets */; };
 		183E8DC129DBF2FE004ED5D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183E8DBF29DBF2FE004ED5D5 /* LaunchScreen.storyboard */; };
 		183E8DC929DBF318004ED5D5 /* FantasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E8DC829DBF318004ED5D5 /* FantasticView.swift */; };
+		F19A049D9F0805C0EECB2466 /* Pods_FantasticView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8CCB5ECB2B3B87FBB914E4 /* Pods_FantasticView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		183E8DC029DBF2FE004ED5D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183E8DC229DBF2FE004ED5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183E8DC829DBF318004ED5D5 /* FantasticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasticView.swift; sourceTree = "<group>"; };
+		CEEBA9033F2F040AFA9A1917 /* Pods-FantasticView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasticView.debug.xcconfig"; path = "Target Support Files/Pods-FantasticView/Pods-FantasticView.debug.xcconfig"; sourceTree = "<group>"; };
+		EC26C55A9CF8E9C742615B65 /* Pods-FantasticView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FantasticView.release.xcconfig"; path = "Target Support Files/Pods-FantasticView/Pods-FantasticView.release.xcconfig"; sourceTree = "<group>"; };
+		ED8CCB5ECB2B3B87FBB914E4 /* Pods_FantasticView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FantasticView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19A049D9F0805C0EECB2466 /* Pods_FantasticView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1653EEB464980E140B4FC797 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED8CCB5ECB2B3B87FBB914E4 /* Pods_FantasticView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		183E8DA829DBF2FD004ED5D5 = {
 			isa = PBXGroup;
 			children = (
 				183E8DB329DBF2FD004ED5D5 /* FantasticView */,
 				183E8DB229DBF2FD004ED5D5 /* Products */,
+				48C9749638F4F449B30005D4 /* Pods */,
+				1653EEB464980E140B4FC797 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = FantasticView;
 			sourceTree = "<group>";
 		};
+		48C9749638F4F449B30005D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEEBA9033F2F040AFA9A1917 /* Pods-FantasticView.debug.xcconfig */,
+				EC26C55A9CF8E9C742615B65 /* Pods-FantasticView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 183E8DC529DBF2FE004ED5D5 /* Build configuration list for PBXNativeTarget "FantasticView" */;
 			buildPhases = (
+				C12E94373EB5F14CEBF39FFC /* [CP] Check Pods Manifest.lock */,
 				183E8DAD29DBF2FD004ED5D5 /* Sources */,
 				183E8DAE29DBF2FD004ED5D5 /* Frameworks */,
 				183E8DAF29DBF2FD004ED5D5 /* Resources */,
+				E4C03536E1385D1EB987AF8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C12E94373EB5F14CEBF39FFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FantasticView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C03536E1385D1EB987AF8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasticView/Pods-FantasticView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FantasticView/Pods-FantasticView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FantasticView/Pods-FantasticView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		183E8DAD29DBF2FD004ED5D5 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		183E8DC629DBF2FE004ED5D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEEBA9033F2F040AFA9A1917 /* Pods-FantasticView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +386,7 @@
 		};
 		183E8DC729DBF2FE004ED5D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC26C55A9CF8E9C742615B65 /* Pods-FantasticView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
